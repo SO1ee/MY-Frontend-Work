@@ -1,0 +1,238 @@
+/* Box Model */
+
+display: Specifies the display behavior of an element. Values: inline | block | inline-block | flex | grid | none. Use: Controls how an element is displayed in the layout.
+
+position: Sets the positioning method for an element. Values: static | relative | absolute | fixed | sticky. Use: Positions an element with respect to its containing element.
+
+top, right, bottom, left: Positions an element with respect to its containing element. Values: auto | length | percentage | initial | inherit. Use: Adjusts the positioning of an element on the top, right, bottom, or left side.
+
+float: Specifies whether an element should be floated to the left, right, or none. Values: left | right | none. Use: Allows an element to be taken out of the normal flow and placed along the left or right side of its container.
+
+clear: Specifies which sides of an element other floating elements are not allowed. Values: none | left | right | both. Use: Clears the floating effect of preceding elements on the left, right, or both sides.
+
+box-sizing: Determines how the total width and height of an element are calculated. Values: content-box | border-box. Use: Changes the box model to include or exclude padding and border from the width and height calculations.
+
+width, height: Sets the width and height of an element. Values: auto | length | percentage | initial | inherit. Use: Defines the dimensions of an element.
+
+max-width, max-height: Specifies the maximum width and height an element can have. Values: none | length | percentage | initial | inherit. Use: Restricts the maximum width and height of an element.
+
+min-width, min-height: Specifies the minimum width and height an element can have. Values: length | percentage | initial | inherit. Use: Ensures the minimum width and height of an element.
+
+margin: Sets the margin space around an element. Values: length | auto | initial | inherit. Use: Creates space around an element, separating it from other elements.
+
+padding: Sets the padding space within an element. Values: length | percentage | initial | inherit. Use: Specifies the space between the content of an element and its border.
+
+overflow: Controls what happens when the content of an element overflows its box. Values: visible | hidden | scroll | auto | overlay. Use: Determines how an element behaves when its content is larger than its box.
+
+clip-path: Clips an element to a basic shape or to an SVG shape. Values: none | <basic-shape> | <geometry-box> | <url> | fill-box | stroke-box | view-box. Use: Defines the visible portion of an element by clipping it with a specified shape.
+
+box-shadow: Applies a shadow effect to an element's box. Values: none | h-shadow v-shadow blur spread color | inset | initial | inherit. Use: Adds a shadow effect to the element's box, creating a 3D-like appearance.
+
+border: Sets the width, style, and color of an element's border. Values: border-width | border-style | color | initial | inherit. Use: Creates a border around an element with the specified width, style, and color.
+
+border-radius: Defines the rounded corners of an element. Values: length | percentage | initial | inherit. Use: Rounds the corners of an element, creating a softer appearance.
+
+border-image: Specifies an image to be used as the border. Values: source | slice | width | outset | repeat | initial | inherit. Use: Applies an image as the border of an element.
+
+outline: Sets an outline around an element. Values: outline-color | outline-style | outline-width | initial | inherit. Use: Creates a line around the outside of an element, without affecting its layout.
+
+
+
+
+/* Backgrounds and Borders */
+
+background-color: Sets the background color of an element. Values: color | transparent | initial | inherit. Use: Fills the background of an element with a specified color.
+
+background-image: Sets the background image of an element. Values: url | none | initial | inherit. Use: Inserts an image as the background of an element.
+
+background-repeat: Specifies how a background image should be repeated. Values: repeat | repeat-x | repeat-y | no-repeat | initial | inherit. Use: Controls how the background image is repeated within an element.
+
+background-position: Sets the starting position of a background image. Values: position | percentage | length | left | center | right | top | bottom | initial | inherit. Use: Positions the background image within the element.
+
+background-size: Defines the size of the background image. Values: length | percentage | cover | contain | initial | inherit. Use: Adjusts the size of the background image to fit the element.
+
+background-attachment: Specifies if the background image scrolls with the content or remains fixed. Values: scroll | fixed | local | initial | inherit. Use: Determines whether the background image scrolls with the content or stays fixed in the viewport.
+
+background-clip: Specifies the painting area of the background. Values: border-box | padding-box | content-box | text. Use: Defines the area of the element where the background is painted.
+
+background-origin: Sets where the background image is positioned relative to the border box. Values: padding-box | border-box | content-box | initial | inherit. Use: Determines the starting point for the background image within the element.
+
+border-collapse: Specifies whether table borders should be collapsed into a single border or not. Values: collapse | separate | initial | inherit. Use: Controls the appearance of table borders when tables are placed next to each other.
+
+border-spacing: Sets the spacing between adjacent table borders. Values: length | initial | inherit. Use: Creates space between adjacent table borders.
+
+
+
+/* Text Styling */
+
+color: Sets the text color. Values: color | transparent | initial | inherit. Use: Specifies the color of the text within an element.
+
+direction: Specifies the text direction/writing direction. Values: ltr | rtl | initial | inherit. Use: Defines the direction in which the text is written.
+
+letter-spacing: Adjusts the spacing between characters. Values: normal | length | initial | inherit. Use: Increases or decreases the space between characters in text.
+
+line-height: Sets the height of a line of text. Values: normal | number | length | percentage | initial | inherit. Use: Determines the height of a line of text within an element.
+
+text-align: Aligns the text horizontally within an element. Values: left | right | center | justify | initial | inherit. Use: Positions the text inside an element horizontally.
+
+text-decoration: Adds decorations to text (e.g., underline, overline, line-through). Values: none | underline | overline | line-through | initial | inherit. Use: Decorates the text with lines such as underlines and strikes.
+
+text-indent: Sets the indentation of the first line of text. Values: length | percentage | initial | inherit. Use: Indents the first line of text within an element.
+
+text-transform: Changes the case of text (e.g., uppercase, lowercase, capitalize). Values: none | capitalize | uppercase | lowercase | initial | inherit. Use: Converts the case of the text within an element.
+
+white-space: Controls how white spaces inside an element are handled. Values: normal | nowrap | pre | pre-line | pre-wrap | initial | inherit. Use: Defines how whitespace characters are displayed within the element.
+
+word-spacing: Adjusts the spacing between words. Values: normal | length | percentage | initial | inherit. Use: Increases or decreases the space between words in text.
+
+text-shadow: Adds a shadow to text. Values: h-shadow v-shadow blur color | none | initial | inherit. Use: Applies a shadow effect to the text, creating a three-dimensional look.
+
+
+
+/* Fonts */
+
+font-family: Defines the font family for text. Values: font-name | generic-family | initial | inherit. Use: Specifies the font family to be used for text.
+
+font-size: Sets the font size for text. Values: medium | xx-small | x-small | small | large | x-large | xx-large | larger | smaller | length | percentage | initial | inherit. Use: Determines the size of the text within an element.
+
+font-weight: Specifies the font weight for text. Values: normal | bold | bolder | lighter | number | initial | inherit. Use: Controls the boldness of the text.
+
+font-style: Sets the font style for text. Values: normal | italic | oblique | initial | inherit. Use: Specifies whether the text is italicized or oblique.
+
+font-variant: Controls the usage of alternate glyphs for small caps and other character variants. Values: normal | small-caps | initial | inherit. Use: Displays text in small capitals or the normal uppercase and lowercase.
+
+@font-face: Allows custom fonts to be loaded on a webpage. Values: font-family | src | font-weight | font-style | unicode-range | font-variant | font-feature-settings. Use: Imports custom fonts for use on a webpage.
+
+
+
+/* Transforms and Animations */
+
+transform: Applies 2D or 3D transformations to an element. Values: none | matrix | matrix3d | translate | translate3d | translateX | translateY | translateZ | scale | scale3d | scaleX | scaleY | scaleZ | rotate | rotate3d | rotateX | rotateY | rotateZ | skew | skewX | skewY | perspective. Use: Transforms the appearance of an element using various transformations.
+
+transform-origin: Specifies the origin of a transformation. Values: x-axis | y-axis | z-axis | length | percentage | initial | inherit. Use: Sets the point around which the transformation should occur.
+
+backface-visibility: Defines whether the back face of an element is visible when facing the user. Values: visible | hidden | initial | inherit. Use: Determines if the back face of a 3D-transformed element is visible.
+
+
+
+/* Transitions and Animations */
+
+transition: Shorthand for defining transition properties for an element. Values: transition-property | transition-duration | transition-timing-function | transition-delay. Use: Specifies how an element should transition between different property values.
+
+transition-property: Specifies the CSS property to which a transition is applied. Values: none | all | property | initial | inherit. Use: Sets the properties that should be affected by a transition.
+
+transition-duration: Sets the duration of a transition. Values: time | initial | inherit. Use: Defines the time it takes to complete the transition effect.
+
+transition-timing-function: Specifies the speed curve of a transition. Values: ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier | step-start | step-end | steps | initial | inherit. Use: Determines the speed curve of the transition effect.
+
+transition-delay: Specifies when a transition will start. Values: time | initial | inherit. Use: Adds a delay before the transition effect starts.
+
+
+
+/*All Css properties*/
+
+Box Model
+display: Specifies the type of box an element generates.
+position: Sets the positioning method for an element.
+top, right, bottom, left: Positions an element with respect to its containing element.
+float: Specifies whether an element should be floated to the left, right, or none.
+clear: Specifies which sides of an element other floating elements are not allowed.
+box-sizing: Determines how the total width and height of an element are calculated.
+width, height: Sets the width and height of an element.
+max-width, max-height: Specifies the maximum width and height an element can have.
+min-width, min-height: Specifies the minimum width and height an element can have.
+margin: Sets the margin space around an element.
+padding: Sets the padding space within an element.
+overflow: Controls what happens when the content of an element overflows its box.
+clip-path: Clips an element to a basic shape or to an SVG shape.
+box-shadow: Applies a shadow effect to an element's box.
+border: Sets the width, style, and color of an element's border.
+border-radius: Defines the rounded corners of an element.
+border-image: Specifies an image to be used as the border.
+outline: Sets an outline around an element.
+Backgrounds and Borders
+background-color: Sets the background color of an element.
+background-image: Sets the background image of an element.
+background-repeat: Specifies how a background image should be repeated.
+background-position: Sets the starting position of a background image.
+background-size: Defines the size of the background image.
+background-attachment: Specifies if the background image scrolls with the content or remains fixed.
+background-clip: Specifies the painting area of the background.
+background-origin: Sets where the background image is positioned relative to the border box.
+background-image: Sets the background image for an element.
+border-collapse: Specifies whether table borders should be collapsed into a single border or not.
+border-spacing: Sets the spacing between adjacent table borders.
+border-image: Shorthand property that sets all border-image-* properties.
+Text Styling
+color: Sets the text color.
+direction: Specifies the text direction/writing direction.
+letter-spacing: Adjusts the spacing between characters.
+line-height: Sets the height of a line of text.
+text-align: Aligns the text horizontally within an element.
+text-decoration: Adds decorations to text (e.g., underline, overline, line-through).
+text-indent: Sets the indentation of the first line of text.
+text-transform: Changes the case of text (e.g., uppercase, lowercase, capitalize).
+white-space: Controls how white spaces inside an element are handled.
+word-spacing: Adjusts the spacing between words.
+text-shadow: Adds a shadow to text.
+Fonts
+font-family: Defines the font family for text.
+font-size: Sets the font size for text.
+font-weight: Specifies the font weight for text.
+font-style: Sets the font style for text.
+font-variant: Controls the usage of alternate glyphs for small caps and other character variants.
+@font-face: Allows custom fonts to be loaded on a webpage.
+Transformations
+transform: Applies 2D or 3D transformations to an element.
+transform-origin: Specifies the origin of a transformation.
+backface-visibility: Defines whether the back face of an element is visible when facing the user.
+Transitions and Animations
+transition: Shorthand for defining transition properties for an element.
+transition-property: Specifies the CSS property to which a transition is applied.
+transition-duration: Sets the duration of a transition.
+transition-timing-function: Specifies the speed curve of a transition.
+transition-delay: Specifies when a transition will start.
+animation: Shorthand for defining animation properties for an element.
+animation-name: Specifies the name of the @keyframes animation.
+animation-duration: Sets the duration of an animation.
+animation-timing-function: Specifies the speed curve of an animation.
+animation-delay: Specifies when an animation will start.
+animation-iteration-count: Sets the number of times an animation should run.
+animation-direction: Sets whether an animation should play in reverse or alternate directions.
+animation-fill-mode: Specifies how an animation should apply styles before and after it executes.
+animation-play-state: Sets whether an animation is running or paused.
+Transforms and Animations
+transform-style: Specifies how nested elements are rendered in 3D space.
+perspective: Sets the perspective view for 3D transformations.
+perspective-origin: Specifies the origin for the perspective property.
+animation: A shorthand property for setting multiple animation properties.
+animation-name: Specifies the name of the @keyframes animation.
+animation-duration: Sets the duration of an animation.
+animation-timing-function: Specifies the speed curve of an animation.
+animation-delay: Specifies when an animation will start.
+animation-iteration-count: Sets the number of times an animation should run.
+animation-direction: Sets whether an animation should play in reverse or alternate directions.
+animation-fill-mode: Specifies how an animation should apply styles before and after it executes.
+animation-play-state: Sets whether an animation is running or paused.
+Multi-Column Layout
+columns: Specifies the column width and column count for an element.
+column-gap: Sets the gap between columns in an element.
+column-rule: Shorthand for setting column rule properties in a single declaration.
+column-rule-width: Sets the width of the rule between columns.
+column-rule-style: Sets the style of the rule between columns.
+column-rule-color: Sets the color of the rule between columns.
+column-span: Specifies how many columns an element spans across.
+column-fill: Specifies how a column is filled when it overflows.
+Flexbox Layout
+flex-direction: Specifies the direction of the flex container's main axis.
+flex-wrap: Specifies whether flex items should wrap or not.
+flex-flow: A shorthand property for setting flex-direction and flex-wrap.
+order: Specifies the order of a flex item.
+flex-grow: Specifies how much a flex item will grow relative to other flex items.
+flex-shrink: Specifies how much a flex item will shrink relative to other flex items.
+flex-basis: Specifies the initial main size of a flex item.
+flex: A shorthand property for setting flex-grow, flex-shrink, and flex-basis.
+align-self: Specifies the alignment of a flex item within its container.
+Grid Layout
+grid-template-columns: Specifies the size of columns in a grid.
+grid-template-rows: Specifies the size of rows in a grid

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+            <img src="images/logo.svg" alt="logo" class="logo">
+            <nav class="navbar">
+                <ul class="navabrlist">
+                    <li><a class="navbar-link"href="#">Home</a></li>
+                    <li><a class="navbar-link"href="#">Menus</a></li>
+                    <li><a class="navbar-link"href="#">About Us</a></li>
+                    <li><a class="navbar-link"href="#">Our Chefs</a></li>
+                    <li><a class="navbar-link"href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-navbar-btn">
+                <i class="fa-solid fa-bars btn2"></i>
+            </div>   
+    </header>
+    <div class="header1">
+        <div class="container">
+                <img src="images/logo.svg" alt="logo" class="log1">
+                <i class="fa-solid fa-xmark bt1"></i>
+            <nav class="navbar1">
+                <ul class="navabrlist1">
+                    <li><a class="navbar-link1"href="#">Home</a></li>
+                    <hr>
+                    <li><a class="navbar-link1"href="#">Menus</a></li>
+                    <hr>
+                    <li><a class="navbar-link1"href="#">About Us</a></li>
+                    <hr>
+                    <li><a class="navbar-link1"href="#">Our Chefs</a></li>
+                    <hr>
+                    <li><a class="navbar-link1"href="#">Contact</a></li>
+                    <hr>
+                </ul>
+            </nav>
+            <section>
+                <h2>Visit Us</h2><br>
+                <p>Via dalla Staziun 40, Duillier,Switzerland</p><br>
+                <p>Open:9:30am to 8:00 pm</p>
+            </section>
+        </div>
+    </div>
+    <!--Main section starts here-->
+    <div class="hero-section">
+        <img src="images/hero-slider-2.jpg" alt="Hero Image" class="image">
+        <pre>
+            <p>Where every flavor
+   tells a story</p>
+        </pre>  
+        <h3>Come with family & feel the joy of mouthwatering food</h3>  
+    </div>
+    <!--<div class="hero-section">
+        <img src="images/hero-slider-2.jpg" alt="Hero Image" class="image">
+    </div>-->
+    <!--Carousel-->
+    <div class="carousel">
+        <div class="slide-container">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <div class="slide-first first">
+                <img src="images/hero-slider-1.jpg" alt="Image 1" class="slide">
+            </div>
+            <div class="slide-first">
+                <img src="images/hero-slider-1.jpg" alt="Image 1" class="slide">
+            </div>
+            <div class="slide-first">
+                <img src="images/hero-slider-1.jpg" alt="Image 1" class="slide">
+            </div>
+          <!--automatic navigation start -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+          <!--Automatic navigation ends-->
+        </div>
+        <!--Manual navigation start here-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        <!--Manual navigation ends here-->
+      </div>
+    <!--End of carousel-->
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+html,body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+.header{
+    /*padding:1%;*/
+    width:100vw;
+    display:flex;
+    gap:1%;
+    justify-content: space-between;
+    position:absolute;
+    z-index:1;
+    /*display:none;*/
+}
+.navbar{
+    padding-right:1%;
+}
+.navabrlist{
+    display:flex;
+    justify-content:space-between;
+    gap:1em;
+    color:white;
+}
+.navabrlist li{
+    list-style:none;
+}
+.navabrlist li a{
+    text-decoration:none;
+    color:white;
+}
+.navbar-link:hover,
+.navbar-link:active
+{
+    color:orange;
+}
+.mobile-navbar-btn{
+    cursor:pointer;
+    display:none;
+}
+.fa-bars,
+.fa-xmark{
+    color:white;
+}
+.fa-bars{
+    display:none;
+}
+.header1{
+    display:none;
+    min-width:45vw;
+    height:100vh;
+    /*border:2px solid white;*/
+    background-color:black;
+    position:absolute;
+    z-index:1;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    gap:15%;
+    border-right:solid grey;
+    min-width:45vw;
+    height:100vh;
+}
+.container section{
+    color:white;
+}
+.container section h2{
+    display:flex;
+    justify-content:center;
+    color:white;
+    font-family:Libre Bodoni;
+    line-height:1.5%;
+}
+.container section p{
+    color:hsla(294, 77%, 100%, 0.68);
+    display:flex;
+    justify-content:center;
+    font-family:Edu SA Beginner;
+    line-height:0.4%;
+}
+.bt1{
+    position:absolute;
+    top:0;
+    right:10px;
+}
+.log1{
+    width:60%;
+}
+.navabrlist1 li a{
+    text-decoration:none;
+    color:hsla(360, 100%, 100%,0.9);
+}
+.navabrlist1 hr{
+    border-color:hsla(50, 52%, 43%, 0.77);
+    /*width:30%;*/
+    margin:4% 10% 4% 10%;
+
+}
+.navabrlist1 li {
+    margin-left:40%;
+    list-style:none;
+}
+/*Hero section styling*/
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoomOut 5s infinite;
+    
+  }
+  @keyframes zoomOut {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+    0%{
+        transform: scale(1.1);
+    }
+  }  
+.hero-section p{
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Shippori Mincho', serif;
+    font-style:italic;
+    word-spacing:15px;
+    animation: liftup 4s linear;
+}
+.hero-section h3{
+    color:white;
+    position:absolute;
+    top:79%;
+    left:33%;
+}
+@keyframes liftup {
+    0%{
+        top: 70%;
+        left: 50%;
+        display:none;
+    }
+    100%{
+        top:50%;
+        left:50%;
+    }
+}
+/*Carousel*/
+ .carousel{
+    width:800px;
+    height:500px;
+    border-radius:10px;
+    overflow:hidden;
+ }
+ .slide-container{
+    width:500%;
+    height:500px;
+    display:flex;
+ }
+ .slide-container input{
+    display:none;
+ }
+ .slide-first{
+      width:20%;
+      transition:2s;
+ }
+ .slide-first img{
+      width:800px;
+      height:500px;
+ }
+ /*css for manual navigation*/
+    .navigation-manual{
+        position:absolute;
+        width:800px;
+        margin-top:-40px;
+        display:flex;
+        justify-content:center;
+    }
+    .manual-btn{
+        border:4px solid yellow;
+        padding:5px;
+        border-radius:10px;
+        cursor:pointer;
+        transition:1s;
+        margin-left:40px;
+    }
+    .manual-btn:not(:last-child){
+        margin-left:40px;
+    }
+    .manual-btn:hover{
+        background-color:yellow;
+    }
+    #radio1:checked ~ .first{
+        margin-left:0;
+    }
+    #radio2:checked ~ .first{
+        margin-left:-20%;
+    }
+    #radio3:checked ~ .first{
+        margin-left:-40%;
+    }
+ /*End of manual css navigation*/
+ /*Css for automatic navigator*/
+    .navigation-auto{
+        position:absolute;
+        display:flex;
+        width:800px;
+        justify-content:center;
+        margin-top:460px;
+    }
+    .navigation-auto div{
+        border:solid white;
+        padding:5px;
+        border-radius:10px;
+        transition:1s;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right:40px;
+    }
+ /*End of automatic navigation*/
+/*End of Carousel*/
+/*Code for responsivenes*/
+@media screen and (max-width:768px) {
+        /*Working with toggle navbar*/
+        .mobile-navbar-btn{
+            display:block;
+        }
+        .fa-bars{
+            display:block;
+            color:white;
+        }
+        .fa-xmark{
+            display:block;
+            color:white;
+        }
+        .navabrlist{
+            display:none;
+        }
+        /*End of working with togglebar*/
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+@media screen and (min-width: 1025px) {}
